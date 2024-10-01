@@ -8,29 +8,30 @@
             font-family: Arial, sans-serif;
             padding: 0;
             margin: 0;
-            background-color: #FFF8E7; /* Light Beige */
+            background-color: #f0f4f8; /* Soft light blue */
         }
         /* Header Styles */
         header {
             display: flex;
             align-items: center;
             padding: 20px 50px;
-            background-color: inherit;
+            background-color: #ffffff; /* White background for header */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .logo {
             margin-right: 20px;
         }
         .logo img {
-            width: 100px; /* Adjust the size as needed */
+            width: 120px; /* Adjust the size as needed */
             height: auto;
+            border-radius: 60px; /* Makes the image circular */
         }
         .header-text {
             text-align: left;
         }
         /* Main Content Styles */
         main {
-            padding: 0 50px;
-            text-align: center;
+            padding: 20px 50px;
         }
         h1 {
             font-size: 36px;
@@ -38,23 +39,34 @@
             margin: 0;
         }
         p {
-            font-size: 20px;
-            color: #666;
-            margin: 5px 0 0 0;
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+            line-height: 1.6;
         }
-        .skills {
-            margin-top: 20px;
+        .skills, .about, .contact {
+            margin-top: 30px;
         }
         h2 {
             font-size: 28px;
             margin-top: 40px;
             color: #333;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         .project-list {
             margin-top: 20px;
         }
         .project {
-            margin: 10px 0;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #e4e4e4;
+            border-radius: 5px;
+        }
+        .project h3 {
+            margin: 0 0 10px 0;
         }
         .project a {
             text-decoration: none;
@@ -63,11 +75,28 @@
         .project a:hover {
             text-decoration: underline;
         }
-        /* Footer Styles (if needed) */
+        /* Contact Styles */
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-info li {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Footer Styles */
         footer {
             padding: 20px 50px;
             text-align: center;
-            background-color: inherit;
+            background-color: #ffffff;
+            border-top: 1px solid #e4e4e4;
         }
     </style>
 </head>
@@ -76,36 +105,27 @@
     <header>
         <!-- Placeholder Image -->
         <div class="logo">
-            <img src="image/my-foto.jpg" alt="Your Logo">
+            <!-- Add your image in the 'images' folder and update the src -->
+            <img src="images/your-photo.jpg" alt="Your Photo">
         </div>
         <!-- Name and Skills -->
         <div class="header-text">
             <h1>Simoun Asmar</h1>
-            <p>Data Analyst | Visualization | SQL | Python</p>
+            <p>Data Analyst | Visualization | SQL | Python | Tableau</p>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Skills Section -->
-        <div class="skills">
-            <p>Expert in data analysis and visualizations, specializing in SQL | Tableau | Python.</p>
-        </div>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <!-- Your project details go here -->
-                </div>
-            </div>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring Data Analyst currently enhancing my skills in Spreadsheets, Tableau, SQL, and Business Intelligence tools. With a passion for turning data into actionable insights, I have developed expertise in data visualization and analysis using SQL, Python, and Tableau.
+            </p>
+            <p>
+                My journey involves working on diverse projects that have honed my ability to interpret complex datasets and present them in an understandable manner. I am dedicated to continuous learning and applying analytical techniques to solve real-world problems.
+            </p>
         </section>
-    </main>
 
-    <!-- Footer Section (optional) -->
-    <!-- <footer>
-        <!-- Footer content goes here -->
-    <!-- </footer> -->
-</body>
-</html>
+        <!-- Skills Secti
