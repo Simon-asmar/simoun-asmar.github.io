@@ -11,6 +11,13 @@ body {
   background: #f7fbff;
 }
 
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #home {
   position: relative;
   min-height: auto;
