@@ -196,6 +196,16 @@ header a,
   min-height: auto;
 }
 
+#contact a[href^="tel:"],
+#contact .flex.items-start:has(a[href^="tel:"]) {
+  display: none;
+}
+
+#certifications a[href="/Simoun_Asmar_EN.pdf"],
+#certifications .mt-12:has(a[href="/Simoun_Asmar_EN.pdf"]) {
+  display: none;
+}
+
 @media (min-width: 680px) {
   #home > .container > div {
     display: grid;
